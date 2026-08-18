@@ -36,12 +36,18 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo / Brand */}
-          <a href="#hero" className="flex items-center gap-3 group">
-            <img
-              src="/eimaan-logo.png"
-              alt="Eimaan Maison wordmark"
-              className="h-10 w-auto object-contain transition-all duration-300 group-hover:opacity-75"
-            />
+          <a href="#hero" aria-label="Eimaan Maison Home" className="flex items-center gap-3 group">
+            <picture>
+              <source srcSet="/eimaan-logo.webp" type="image/webp" />
+              <img
+                src="/eimaan-logo.png"
+                alt="Eimaan Maison wordmark"
+                width={257}
+                height={40}
+                decoding="async"
+                className="h-10 w-auto object-contain transition-all duration-300 group-hover:opacity-75"
+              />
+            </picture>
           </a>
 
           {/* Desktop links */}
@@ -50,7 +56,7 @@ export default function Navbar() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="font-body text-xs font-medium tracking-widest uppercase text-[#fdf8ef]/70 hover:text-[#d4a843] transition-colors duration-250 hover-line"
+                  className="font-body text-xs font-medium tracking-widest uppercase text-[#fdf8ef]/85 hover:text-[#d4a843] transition-colors duration-250 hover-line"
                 >
                   {l.label}
                 </a>
@@ -64,6 +70,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             id="nav-whatsapp-cta"
+            aria-label="Chat with Eimaan Maison on WhatsApp (opens in new tab)"
             className="hidden lg:inline-flex btn-gold text-xs"
           >
             WhatsApp Us
@@ -72,7 +79,8 @@ export default function Navbar() {
           {/* Mobile menu toggle */}
           <button
             id="mobile-menu-toggle"
-            aria-label="Toggle menu"
+            aria-label="Toggle navigation menu"
+            aria-expanded={open}
             onClick={() => setOpen(o => !o)}
             className="lg:hidden text-[#d4a843] p-1"
           >
@@ -88,7 +96,7 @@ export default function Navbar() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="font-body text-sm tracking-widest uppercase text-[#fdf8ef]/80 hover:text-[#d4a843] transition-colors"
+                className="font-body text-sm tracking-widest uppercase text-[#fdf8ef]/90 hover:text-[#d4a843] transition-colors"
               >
                 {l.label}
               </a>
@@ -97,6 +105,7 @@ export default function Navbar() {
               href="https://wa.me/2348064474739"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Chat with Eimaan Maison on WhatsApp (opens in new tab)"
               className="btn-gold self-start text-xs"
             >
               WhatsApp Us

@@ -24,19 +24,26 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
         {/* Pre-title badge */}
         <div className="animate-fade-in mb-8">
-          <span className="inline-block font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#d4a843]/80 border border-[rgba(212,168,67,0.3)] px-5 py-2">
+          <span className="inline-block font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#e8c45d] border border-[rgba(212,168,67,0.3)] px-5 py-2">
             Est. 2026 · Katsina, Nigeria
           </span>
         </div>
 
         {/* Brand logo wordmark */}
         <div className="animate-fade-in-up delay-100 mb-6">
-          <img
-            src="/eimaan-logo-gold.png"
-            alt="Eimaan Maison — Luxury Skincare, Beauty & Fragrance"
-            className="h-28 md:h-40 w-auto object-contain mx-auto"
-            style={{ filter: 'drop-shadow(0 0 40px rgba(212,168,67,0.25))' }}
-          />
+          <picture>
+            <source srcSet="/eimaan-logo-gold.webp" type="image/webp" />
+            <img
+              src="/eimaan-logo-gold.png"
+              alt="Eimaan Maison — Luxury Skincare, Beauty & Fragrance"
+              width={720}
+              height={112}
+              fetchPriority="high"
+              decoding="async"
+              className="h-28 md:h-40 w-auto object-contain mx-auto"
+              style={{ filter: 'drop-shadow(0 0 40px rgba(212,168,67,0.25))' }}
+            />
+          </picture>
         </div>
 
         {/* H1 */}
@@ -46,7 +53,7 @@ export default function Hero() {
         </h1>
 
         {/* Tagline */}
-        <p className="font-body animate-fade-in-up delay-300 text-sm md:text-base text-[#fdf8ef]/55 tracking-wider max-w-xl mx-auto mb-12 leading-relaxed">
+        <p className="font-body animate-fade-in-up delay-300 text-sm md:text-base text-[#fdf8ef]/80 tracking-wider max-w-xl mx-auto mb-12 leading-relaxed">
           Premium skincare formulated with intention. Personalized consultations.
           Curated fragrances and luxury essentials.
         </p>
@@ -56,6 +63,7 @@ export default function Hero() {
           <a
             href="#consultation"
             id="hero-consult-cta"
+            aria-label="Book a personalized skincare consultation"
             className="btn-gold"
           >
             <BookOpen size={15} />
@@ -64,6 +72,7 @@ export default function Hero() {
           <a
             href="#skincare"
             id="hero-explore-cta"
+            aria-label="Explore our luxury skincare collection"
             className="btn-ghost"
           >
             <ShoppingBag size={15} />
@@ -74,6 +83,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             id="hero-whatsapp-cta"
+            aria-label="Chat with Eimaan Maison on WhatsApp (opens in new tab)"
             className="btn-ghost"
           >
             <MessageCircle size={15} />
@@ -85,8 +95,8 @@ export default function Hero() {
       {/* Scroll indicator */}
       <a
         href="#about"
-        aria-label="Scroll to About"
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#d4a843]/50 hover:text-[#d4a843] transition-colors animate-fade-in delay-600"
+        aria-label="Scroll down to About section"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#d4a843]/80 hover:text-[#d4a843] transition-colors animate-fade-in delay-600"
       >
         <span className="font-body text-[0.6rem] tracking-[0.25em] uppercase">Discover</span>
         <ChevronDown size={16} className="animate-bounce" />

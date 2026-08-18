@@ -51,14 +51,14 @@ export default function Skincare() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#d4a843] mb-4">
+          <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#e8c45d] mb-4">
             Our Core Offering
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6">
             <span className="text-gold-gradient italic">Skincare</span> Collection
           </h2>
           <div className="gold-divider w-24 mx-auto mb-8" />
-          <p className="font-body text-sm md:text-base text-[#fdf8ef]/60 leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-sm md:text-base text-[#fdf8ef]/80 leading-relaxed max-w-xl mx-auto">
             Discover Eimaan Maison's collection of thoughtfully formulated skincare products,
             developed with a focus on quality, care and effective beauty routines.
           </p>
@@ -73,7 +73,7 @@ export default function Skincare() {
             >
               {/* Tag */}
               <div className="absolute top-5 right-5">
-                <span className="font-body text-[0.55rem] tracking-[0.2em] uppercase text-[#d4a843]/60 border border-[rgba(212,168,67,0.2)] px-2 py-1">
+                <span className="font-body text-[0.55rem] tracking-[0.2em] uppercase text-[#e8c45d] border border-[rgba(212,168,67,0.35)] px-2 py-1">
                   {cat.tag}
                 </span>
               </div>
@@ -83,13 +83,14 @@ export default function Skincare() {
                   {cat.icon}
                 </div>
                 <h3 className="font-display text-xl text-[#fdf8ef] mb-3">{cat.name}</h3>
-                <p className="font-body text-xs text-[#fdf8ef]/50 leading-relaxed mb-6">{cat.desc}</p>
+                <p className="font-body text-xs text-[#fdf8ef]/70 leading-relaxed mb-6">{cat.desc}</p>
                 <a
-                  href="https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I'm%20interested%20in%20your%20skincare%20products."
+                  href={`https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I'm%20interested%20in%20your%20${encodeURIComponent(cat.name)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   id={`skincare-enquire-${cat.name.toLowerCase().replace(/\s/g, '-')}`}
-                  className="inline-flex items-center gap-2 font-body text-[0.7rem] tracking-[0.15em] uppercase text-[#d4a843] hover:text-[#f3dc9a] transition-colors hover-line"
+                  aria-label={`Enquire about ${cat.name} on WhatsApp (opens in new tab)`}
+                  className="inline-flex items-center gap-2 font-body text-[0.7rem] tracking-[0.15em] uppercase text-[#e8c45d] hover:text-[#f9efcf] transition-colors hover-line"
                 >
                   <MessageCircle size={12} />
                   Enquire
@@ -109,6 +110,7 @@ export default function Skincare() {
             target="_blank"
             rel="noopener noreferrer"
             id="skincare-shop-cta"
+            aria-label="Shop our full skincare collection on WhatsApp (opens in new tab)"
             className="btn-gold"
           >
             <MessageCircle size={15} />

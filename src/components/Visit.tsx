@@ -40,7 +40,7 @@ export default function Visit() {
                   <MapPin size={18} />
                 </div>
                 <div>
-                  <p className="font-body text-[0.6rem] tracking-[0.25em] uppercase text-[#d4a843]/70 mb-2">Address</p>
+                  <p className="font-body text-[0.6rem] tracking-[0.25em] uppercase text-[#e8c45d] mb-2">Address</p>
                   <p className="font-display text-lg text-[#fdf8ef] leading-relaxed">
                     No. 12, Sabuwar Kasuwa<br />
                     Katsina, Katsina State<br />
@@ -51,7 +51,8 @@ export default function Visit() {
                     target="_blank"
                     rel="noopener noreferrer"
                     id="visit-maps-link"
-                    className="inline-flex items-center gap-1 mt-3 font-body text-[0.7rem] tracking-widest uppercase text-[#d4a843] hover:text-[#f3dc9a] transition-colors"
+                    aria-label="Get directions to Eimaan Maison on Google Maps (opens in new tab)"
+                    className="inline-flex items-center gap-1 mt-3 font-body text-[0.7rem] tracking-widest uppercase text-[#e8c45d] hover:text-[#f3dc9a] transition-colors"
                   >
                     Get Directions <ExternalLink size={11} />
                   </a>
@@ -66,11 +67,11 @@ export default function Visit() {
                   <Clock size={18} />
                 </div>
                 <div className="flex-1">
-                  <p className="font-body text-[0.6rem] tracking-[0.25em] uppercase text-[#d4a843]/70 mb-3">Opening Hours</p>
+                  <p className="font-body text-[0.6rem] tracking-[0.25em] uppercase text-[#e8c45d] mb-3">Opening Hours</p>
                   {HOURS.map(h => (
                     <div key={h.days} className="flex justify-between items-center py-2 border-b border-[rgba(212,168,67,0.08)] last:border-0">
-                      <span className="font-body text-xs text-[#fdf8ef]/60">{h.days}</span>
-                      <span className={`font-display text-sm ${h.time === 'Closed' ? 'text-[#fdf8ef]/30' : 'text-[#fdf8ef]'}`}>{h.time}</span>
+                      <span className="font-body text-xs text-[#fdf8ef]/75">{h.days}</span>
+                      <span className={`font-display text-sm ${h.time === 'Closed' ? 'text-[#fdf8ef]/40' : 'text-[#fdf8ef]'}`}>{h.time}</span>
                     </div>
                   ))}
                 </div>
@@ -79,10 +80,11 @@ export default function Visit() {
 
             {/* Contact details */}
             <div className="glass-card p-7 space-y-5">
-              <p className="font-body text-[0.6rem] tracking-[0.25em] uppercase text-[#d4a843]/70">Contact</p>
+              <p className="font-body text-[0.6rem] tracking-[0.25em] uppercase text-[#e8c45d]">Contact</p>
               <a
                 href="tel:+2348064474739"
                 id="visit-phone-link"
+                aria-label="Call Eimaan Maison at +234 806 447 4739"
                 className="flex items-center gap-3 group"
               >
                 <div className="w-9 h-9 border border-[rgba(212,168,67,0.25)] flex items-center justify-center text-[#d4a843] group-hover:bg-[rgba(212,168,67,0.08)] transition-colors">
@@ -93,15 +95,16 @@ export default function Visit() {
                 </span>
               </a>
               <a
-                href="mailto:eimaaninnovativeskincare@gmail.com"
+                href="mailto:eimaanmaison@gmail.com"
                 id="visit-email-link"
+                aria-label="Send an email to eimaanmaison@gmail.com"
                 className="flex items-center gap-3 group"
               >
                 <div className="w-9 h-9 border border-[rgba(212,168,67,0.25)] flex items-center justify-center text-[#d4a843] group-hover:bg-[rgba(212,168,67,0.08)] transition-colors">
                   <Mail size={15} />
                 </div>
-                <span className="font-body text-xs text-[#fdf8ef]/70 group-hover:text-[#d4a843] transition-colors break-all">
-                  eimaaninnovativeskincare@gmail.com
+                <span className="font-body text-xs text-[#fdf8ef]/85 group-hover:text-[#d4a843] transition-colors break-all">
+                  eimaanmaison@gmail.com
                 </span>
               </a>
               <a
@@ -109,6 +112,7 @@ export default function Visit() {
                 target="_blank"
                 rel="noopener noreferrer"
                 id="visit-whatsapp-link"
+                aria-label="Chat with Eimaan Maison on WhatsApp (opens in new tab)"
                 className="flex items-center gap-3 group"
               >
                 <div className="w-9 h-9 border border-[rgba(212,168,67,0.25)] flex items-center justify-center text-[#d4a843] group-hover:bg-[rgba(212,168,67,0.08)] transition-colors">

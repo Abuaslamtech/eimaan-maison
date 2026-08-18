@@ -23,14 +23,14 @@ export default function Fragrance() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#d4a843] mb-4">
+          <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#e8c45d] mb-4">
             Scents &amp; Sensibility
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6">
             Perfumes &amp; <span className="text-gold-gradient italic">Fragrance</span>
           </h2>
           <div className="gold-divider w-24 mx-auto mb-8" />
-          <p className="font-body text-sm md:text-base text-[#fdf8ef]/60 leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-sm md:text-base text-[#fdf8ef]/80 leading-relaxed max-w-xl mx-auto">
             Explore Eimaan Maison's selection of premium fragrances — curated for everyday wear,
             special occasions and thoughtful gifting.
           </p>
@@ -59,7 +59,8 @@ export default function Fragrance() {
             target="_blank"
             rel="noopener noreferrer"
             id="fragrance-explore-cta"
-            className="btn-gold mr-4"
+            aria-label="Explore our full fragrance collection on WhatsApp (opens in new tab)"
+            className="btn-gold"
           >
             <MessageCircle size={15} />
             Explore on WhatsApp
@@ -81,12 +82,13 @@ function FragCard({ cat, large = false }: { cat: { icon: React.ReactNode; name: 
           {cat.icon}
         </div>
         <h3 className={`font-display text-[#fdf8ef] mb-3 ${large ? 'text-2xl' : 'text-xl'}`}>{cat.name}</h3>
-        <p className="font-body text-xs text-[#fdf8ef]/50 leading-relaxed mb-5">{cat.desc}</p>
+        <p className="font-body text-xs text-[#fdf8ef]/70 leading-relaxed mb-5">{cat.desc}</p>
         <a
-          href="https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I%27m%20interested%20in%20your%20fragrances."
+          href={`https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I%27m%20interested%20in%20your%20${encodeURIComponent(cat.name)}.`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 font-body text-[0.7rem] tracking-[0.15em] uppercase text-[#d4a843] hover:text-[#f3dc9a] transition-colors hover-line"
+          aria-label={`Enquire about ${cat.name} on WhatsApp (opens in new tab)`}
+          className="inline-flex items-center gap-2 font-body text-[0.7rem] tracking-[0.15em] uppercase text-[#e8c45d] hover:text-[#f9efcf] transition-colors hover-line"
         >
           <MessageCircle size={12} />
           Enquire

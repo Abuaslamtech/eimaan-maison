@@ -1,0 +1,33 @@
+# User-Agent rules for web crawlers & AI indexing bots
+User-agent: *
+Allow: /
+
+# Google Gemini & Google Extended AI crawlers
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI ChatGPT & Search bots
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Perplexity AI bot
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude bot
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Apple Intelligence bot
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Copilot / Bing
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://eimaanmaison.com/sitemap.xml

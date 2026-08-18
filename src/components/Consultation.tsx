@@ -48,7 +48,7 @@ export default function Consultation() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: copy */}
           <div>
-            <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#d4a843] mb-4">
+            <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#e8c45d] mb-4">
               Personalized Service
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6 leading-tight">
@@ -56,12 +56,12 @@ export default function Consultation() {
               <span className="text-gold-gradient italic">Consultation</span>
             </h2>
             <div className="gold-divider w-24 mb-8" />
-            <p className="font-body text-sm text-[#fdf8ef]/60 leading-relaxed mb-4">
+            <p className="font-body text-sm text-[#fdf8ef]/80 leading-relaxed mb-4">
               Not sure which products are right for your skin? Our skincare consultations help
               you understand your unique skin needs and select products appropriate for your
               routine — no guesswork, no waste.
             </p>
-            <p className="font-body text-sm text-[#fdf8ef]/60 leading-relaxed mb-10">
+            <p className="font-body text-sm text-[#fdf8ef]/80 leading-relaxed mb-10">
               Whether you're starting from scratch or looking to refine an existing routine,
               we guide you every step of the way.
             </p>
@@ -69,8 +69,8 @@ export default function Consultation() {
             {/* Targets */}
             <ul className="space-y-2 mb-10">
               {['Oily & combination skin', 'Dry & sensitive skin', 'Hyperpigmentation & dark spots', 'Anti-aging routines', 'Acne-prone skin management'].map(item => (
-                <li key={item} className="flex items-center gap-3 font-body text-xs text-[#fdf8ef]/55">
-                  <span className="w-1 h-1 rounded-full bg-[#d4a843] flex-shrink-0" />
+                <li key={item} className="flex items-center gap-3 font-body text-xs text-[#fdf8ef]/75">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4a843] flex-shrink-0" />
                   {item}
                 </li>
               ))}
@@ -81,6 +81,7 @@ export default function Consultation() {
               target="_blank"
               rel="noopener noreferrer"
               id="consultation-book-cta"
+              aria-label="Book a personalized skincare consultation on WhatsApp (opens in new tab)"
               className="btn-gold"
             >
               <MessageCircle size={15} />
@@ -102,10 +103,10 @@ export default function Consultation() {
                 </div>
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="font-display text-xs text-[#d4a843]/50">{step.num}</span>
+                    <span className="font-display text-xs text-[#e8c45d]">{step.num}</span>
                     <h3 className="font-display text-lg text-[#fdf8ef]">{step.title}</h3>
                   </div>
-                  <p className="font-body text-xs text-[#fdf8ef]/50 leading-relaxed">{step.desc}</p>
+                  <p className="font-body text-xs text-[#fdf8ef]/70 leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}

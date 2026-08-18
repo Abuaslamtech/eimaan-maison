@@ -23,7 +23,7 @@ export default function Gifting() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: copy */}
           <div>
-            <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#d4a843] mb-4">
+            <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#e8c45d] mb-4">
               Special Occasions
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6 leading-tight">
@@ -31,11 +31,11 @@ export default function Gifting() {
               <span className="text-gold-gradient italic">Special Occasions</span>
             </h2>
             <div className="gold-divider w-24 mb-8" />
-            <p className="font-body text-sm text-[#fdf8ef]/60 leading-relaxed mb-4">
+            <p className="font-body text-sm text-[#fdf8ef]/80 leading-relaxed mb-4">
               Eimaan Maison offers thoughtfully curated gift sets, luxury packaging, and
               custom arrangements designed to make every occasion memorable.
             </p>
-            <p className="font-body text-sm text-[#fdf8ef]/60 leading-relaxed mb-10">
+            <p className="font-body text-sm text-[#fdf8ef]/80 leading-relaxed mb-10">
               Whether it's a birthday, wedding, Eid, or a corporate gesture, we ensure
               your gift arrives with the elegance it deserves.
             </p>
@@ -44,6 +44,7 @@ export default function Gifting() {
               target="_blank"
               rel="noopener noreferrer"
               id="gifting-enquire-cta"
+              aria-label="Enquire about custom gift sets on WhatsApp (opens in new tab)"
               className="btn-gold"
             >
               <MessageCircle size={15} />
@@ -62,7 +63,7 @@ export default function Gifting() {
                   {g.icon}
                 </div>
                 <h3 className="font-display text-lg text-[#fdf8ef] mb-2">{g.label}</h3>
-                <p className="font-body text-xs text-[#fdf8ef]/50 leading-relaxed">{g.desc}</p>
+                <p className="font-body text-xs text-[#fdf8ef]/70 leading-relaxed">{g.desc}</p>
               </div>
             ))}
           </div>

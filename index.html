@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XGL1RVDF11"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-XGL1RVDF11');
-    </script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.png?v=3" />
     <link rel="alternate icon" href="/favicon.ico?v=3" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
+
+    <!-- Performance: Preconnect & Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" />
+    </noscript>
+
+    <!-- Performance: Preload Critical Hero LCP Asset -->
+    <link rel="preload" as="image" href="/eimaan-logo-gold.webp" type="image/webp" fetchpriority="high" />
 
     <!-- SEO -->
     <title>Eimaan Maison | Luxury Skincare, Beauty &amp; Fragrance — Katsina, Nigeria</title>
@@ -31,48 +33,138 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_NG" />
 
-    <!-- Schema.org LocalBusiness -->
+    <!-- Schema.org Entity & LocalBusiness Knowledge Graph -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "Store"],
-      "name": "Eimaan Maison Enterprises",
-      "alternateName": "Eimaan Maison",
-      "description": "Luxury skincare and beauty brand offering thoughtfully formulated skincare products, personalized consultations, premium fragrances, and curated luxury essentials.",
-      "url": "https://eimaanmaison.com",
-      "logo": "/eimaan-logo.png",
-      "email": "eimaaninnovativeskincare@gmail.com",
-      "telephone": "+2348064474739",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "No. 12, Sabuwar Kasuwa",
-        "addressLocality": "Katsina",
-        "addressRegion": "Katsina State",
-        "addressCountry": "NG"
-      },
-      "openingHoursSpecification": [
+      "@graph": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-          "opens": "09:00",
-          "closes": "19:00"
+          "@type": ["HealthAndBeautyBusiness", "Store", "LocalBusiness"],
+          "@id": "https://eimaanmaison.com/#business",
+          "name": "Eimaan Maison Enterprises",
+          "alternateName": ["Eimaan Maison", "Eimaan Innovative Skincare"],
+          "description": "Luxury skincare and beauty brand offering formulated skincare products, personalized consultations, premium fragrances, and curated luxury gift sets in Katsina, Nigeria.",
+          "url": "https://eimaanmaison.com",
+          "logo": "https://eimaanmaison.com/eimaan-logo.png",
+          "image": "https://eimaanmaison.com/eimaan-logo.png",
+          "email": "eimaaninnovativeskincare@gmail.com",
+          "telephone": "+2348064474739",
+          "priceRange": "₦₦ - ₦₦₦",
+          "currenciesAccepted": "NGN",
+          "paymentAccepted": "Cash, Bank Transfer, Card Payment",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No. 12, Sabuwar Kasuwa",
+            "addressLocality": "Katsina",
+            "addressRegion": "Katsina State",
+            "postalCode": "820221",
+            "addressCountry": "NG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 12.9908,
+            "longitude": 7.6018
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "Katsina State"
+            },
+            {
+              "@type": "Country",
+              "name": "Nigeria"
+            }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "09:00",
+              "closes": "19:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Saturday"],
+              "opens": "10:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://instagram.com/eimaanmaison",
+            "https://facebook.com/eimaanmaison",
+            "https://wa.me/2348064474739"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Eimaan Maison Products & Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Formulated Luxury Skincare", "description": "High-performance, skin-safe cleansers, toners, moisturizers, and treatments." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Personalized Skincare Consultation", "description": "One-on-one expert consultations to assess skin concerns and create custom routines." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Artisanal & Luxury Fragrances", "description": "Long-lasting luxury perfumes, ouds, and signature scents." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Curated Beauty Gift Sets", "description": "Bespoke beauty and fragrance gift boxes tailored for special occasions." } }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://eimaanmaison.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where is Eimaan Maison located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Eimaan Maison is located at No. 12, Sabuwar Kasuwa, Katsina, Katsina State, Nigeria."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What products and services does Eimaan Maison offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Eimaan Maison offers luxury formulated skincare, personalized 1-on-1 skincare consultations, curated perfumes and Arabian fragrances, and bespoke gift boxes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Eimaan Maison offer delivery across Nigeria?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Eimaan Maison offers nationwide delivery across all states in Nigeria as well as in-store pickup in Katsina."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I book a skin consultation or place an order?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can reach out directly via WhatsApp at +234 806 447 4739 or email eimaaninnovativeskincare@gmail.com to book a consultation or order products."
+              }
+            }
+          ]
         }
-      ],
-      "sameAs": [
-        "https://instagram.com/eimaanmaison",
-        "https://wa.me/2348064474739"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Eimaan Maison Products & Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Luxury Skincare" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Premium Fragrances" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Skincare Consultation" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Luxury Gift Sets" } }
-        ]
-      }
+      ]
     }
+    </script>
+
+    <!-- Google tag (gtag.js) - Non-blocking execution -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XGL1RVDF11');
+
+      function loadGtag() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XGL1RVDF11';
+        document.head.appendChild(s);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGtag);
+      } else {
+        window.addEventListener('load', loadGtag);
+      }
     </script>
   </head>
   <body>
