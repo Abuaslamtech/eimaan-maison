@@ -108,7 +108,7 @@ export default function Visit() {
                 </span>
               </a>
               <a
-                href="https://wa.me/2348064474739"
+                href="https://wa.me/2348138933237"
                 target="_blank"
                 rel="noopener noreferrer"
                 id="visit-whatsapp-link"

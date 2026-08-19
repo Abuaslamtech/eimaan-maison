@@ -66,7 +66,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <a
-            href="https://wa.me/2348064474739"
+            href="https://wa.me/2348138933237"
             target="_blank"
             rel="noopener noreferrer"
             id="nav-whatsapp-cta"
@@ -102,7 +102,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/2348064474739"
+              href="https://wa.me/2348138933237"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat with Eimaan Maison on WhatsApp (opens in new tab)"

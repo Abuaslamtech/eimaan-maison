@@ -85,7 +85,7 @@ export default function Skincare() {
                 <h3 className="font-display text-xl text-[#fdf8ef] mb-3">{cat.name}</h3>
                 <p className="font-body text-xs text-[#fdf8ef]/70 leading-relaxed mb-6">{cat.desc}</p>
                 <a
-                  href={`https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I'm%20interested%20in%20your%20${encodeURIComponent(cat.name)}.`}
+                  href={`https://wa.me/2348138933237?text=Hi%20Eimaan%20Maison%2C%20I'm%20interested%20in%20your%20${encodeURIComponent(cat.name)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   id={`skincare-enquire-${cat.name.toLowerCase().replace(/\s/g, '-')}`}
@@ -106,7 +106,7 @@ export default function Skincare() {
         {/* CTA */}
         <div className="text-center">
           <a
-            href="https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20explore%20your%20full%20skincare%20collection."
+            href="https://wa.me/2348138933237?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20explore%20your%20full%20skincare%20collection."
             target="_blank"
             rel="noopener noreferrer"
             id="skincare-shop-cta"

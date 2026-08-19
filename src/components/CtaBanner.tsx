@@ -32,7 +32,7 @@ export default function CtaBanner() {
 
         <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
           <a
-            href="https://wa.me/2348064474739"
+            href="https://wa.me/2348138933237"
             target="_blank"
             rel="noopener noreferrer"
             id="cta-whatsapp"
@@ -43,7 +43,7 @@ export default function CtaBanner() {
             WhatsApp Eimaan Maison
           </a>
           <a
-            href="https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20book%20a%20skincare%20consultation."
+            href="https://wa.me/2348138933237?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20book%20a%20skincare%20consultation."
             target="_blank"
             rel="noopener noreferrer"
             id="cta-consult"
@@ -93,7 +93,7 @@ export default function CtaBanner() {
           </a>
           <span className="text-[#d4a843]/40">·</span>
           <a
-            href="https://wa.me/2348064474739"
+            href="https://wa.me/2348138933237"
             target="_blank"
             rel="noopener noreferrer"
             id="banner-whatsapp"

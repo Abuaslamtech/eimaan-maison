@@ -77,7 +77,7 @@ export default function Consultation() {
             </ul>
 
             <a
-              href="https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20book%20a%20skincare%20consultation."
+              href="https://wa.me/2348138933237?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20book%20a%20skincare%20consultation."
               target="_blank"
               rel="noopener noreferrer"
               id="consultation-book-cta"

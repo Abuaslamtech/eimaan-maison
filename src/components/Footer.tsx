@@ -62,7 +62,7 @@ export default function Footer() {
               <Share2 size={16} />
             </a>
             <a
-              href="https://wa.me/2348064474739"
+              href="https://wa.me/2348138933237"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat with Eimaan Maison on WhatsApp (opens in new tab)"

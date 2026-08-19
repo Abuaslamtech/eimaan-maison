@@ -40,7 +40,7 @@ export default function Gifting() {
               your gift arrives with the elegance it deserves.
             </p>
             <a
-              href="https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20arrange%20a%20gift%20or%20custom%20packaging."
+              href="https://wa.me/2348138933237?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20arrange%20a%20gift%20or%20custom%20packaging."
               target="_blank"
               rel="noopener noreferrer"
               id="gifting-enquire-cta"

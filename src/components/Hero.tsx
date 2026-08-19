@@ -79,7 +79,7 @@ export default function Hero() {
             Explore Collection
           </a>
           <a
-            href="https://wa.me/2348064474739"
+            href="https://wa.me/2348138933237"
             target="_blank"
             rel="noopener noreferrer"
             id="hero-whatsapp-cta"

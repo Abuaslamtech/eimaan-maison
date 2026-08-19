@@ -55,7 +55,7 @@ export default function Fragrance() {
         {/* CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20explore%20your%20fragrance%20collection."
+            href="https://wa.me/2348138933237?text=Hi%20Eimaan%20Maison%2C%20I'd%20like%20to%20explore%20your%20fragrance%20collection."
             target="_blank"
             rel="noopener noreferrer"
             id="fragrance-explore-cta"
@@ -84,7 +84,7 @@ function FragCard({ cat, large = false }: { cat: { icon: React.ReactNode; name: 
         <h3 className={`font-display text-[#fdf8ef] mb-3 ${large ? 'text-2xl' : 'text-xl'}`}>{cat.name}</h3>
         <p className="font-body text-xs text-[#fdf8ef]/70 leading-relaxed mb-5">{cat.desc}</p>
         <a
-          href={`https://wa.me/2348064474739?text=Hi%20Eimaan%20Maison%2C%20I%27m%20interested%20in%20your%20${encodeURIComponent(cat.name)}.`}
+          href={`https://wa.me/2348138933237?text=Hi%20Eimaan%20Maison%2C%20I%27m%20interested%20in%20your%20${encodeURIComponent(cat.name)}.`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Enquire about ${cat.name} on WhatsApp (opens in new tab)`}
