@@ -1,9 +1,7 @@
 import { MapPin, Clock, Phone, Mail, MessageCircle, ExternalLink } from 'lucide-react'
 
 const HOURS = [
-  { days: 'Monday – Friday',  time: '9:00 AM – 7:00 PM' },
-  { days: 'Saturday',         time: '10:00 AM – 6:00 PM' },
-  { days: 'Sunday',           time: 'Closed' },
+  { days: 'Monday – Sunday',  time: 'Open 24 Hours' },
 ]
 
 export default function Visit() {
