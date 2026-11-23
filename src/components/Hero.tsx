@@ -47,13 +47,13 @@ export default function Hero() {
         </div>
 
         {/* H1 */}
-        <h1 className="font-display animate-fade-in-up delay-200 text-4xl md:text-6xl lg:text-7xl font-light tracking-wide text-[#fdf8ef] mb-4 leading-tight">
+        <h1 className="font-display animate-fade-in-up delay-200 text-4xl md:text-6xl lg:text-7xl font-light tracking-wide text-[#fdf8ef] mb-5 leading-tight text-balance">
           Luxury Skincare,<br />
           <span className="text-gold-gradient italic">Beauty &amp; Fragrance</span>
         </h1>
 
         {/* Tagline */}
-        <p className="font-body animate-fade-in-up delay-300 text-sm md:text-base text-[#fdf8ef]/80 tracking-wider max-w-xl mx-auto mb-12 leading-relaxed">
+        <p className="font-body animate-fade-in-up delay-300 text-sm md:text-base text-[#fdf8ef]/85 tracking-wider max-w-xl mx-auto mb-12 leading-relaxed text-balance">
           Premium skincare formulated with intention. Personalized consultations.
           Curated fragrances and luxury essentials.
         </p>
@@ -96,10 +96,10 @@ export default function Hero() {
       <a
         href="#about"
         aria-label="Scroll down to About section"
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#d4a843]/80 hover:text-[#d4a843] transition-colors animate-fade-in delay-600"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#d4a843]/80 hover:text-[#d4a843] transition-colors animate-fade-in delay-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#d4a843] rounded px-3 py-1"
       >
         <span className="font-body text-[0.6rem] tracking-[0.25em] uppercase">Discover</span>
-        <ChevronDown size={16} className="animate-bounce" />
+        <ChevronDown size={16} className="animate-bounce motion-reduce:animate-none" />
       </a>
     </section>
   )

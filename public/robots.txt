@@ -9,8 +9,15 @@ Allow: /
 # OpenAI ChatGPT & Search bots
 User-agent: GPTBot
 Allow: /
+Allow: /products-feed.jsonl
+Allow: /products-feed.jsonl.gz
+Allow: /products-feed.csv
+
 User-agent: OAI-SearchBot
 Allow: /
+Allow: /products-feed.jsonl
+Allow: /products-feed.jsonl.gz
+Allow: /products-feed.csv
 
 # Perplexity AI bot
 User-agent: PerplexityBot

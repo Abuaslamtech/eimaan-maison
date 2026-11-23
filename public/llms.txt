@@ -31,3 +31,10 @@
 ## Service Area & Delivery
 - In-store visits and consultations in Katsina, Nigeria.
 - Nationwide doorstep delivery across all 36 states of Nigeria and FCT Abuja.
+
+## OpenAI Commerce & Product Feeds
+- **OpenAI Product Feed (JSONL)**: https://eimaanmaison.atlabx.com/products-feed.jsonl
+- **OpenAI Product Feed (Compressed JSONL.GZ)**: https://eimaanmaison.atlabx.com/products-feed.jsonl.gz
+- **OpenAI Product Feed (CSV)**: https://eimaanmaison.atlabx.com/products-feed.csv
+- **Brand**: Eimaan Maison
+- **Merchant / Seller**: Eimaan Maison Enterprises

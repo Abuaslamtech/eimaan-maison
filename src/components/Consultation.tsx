@@ -51,7 +51,7 @@ export default function Consultation() {
             <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#e8c45d] mb-4">
               Personalized Service
             </p>
-            <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6 leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6 leading-tight text-balance">
               Skincare<br />
               <span className="text-gold-gradient italic">Consultation</span>
             </h2>

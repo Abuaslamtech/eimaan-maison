@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node prerender.js",
+    "build": "node scripts/generate-feed.js && tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node prerender.js",
+    "generate-feed": "node scripts/generate-feed.js",
     "lint": "oxlint",
     "preview": "vite preview"
   },

@@ -22,7 +22,7 @@ export default function Visit() {
           <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#d4a843] mb-4">
             Come See Us
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6 text-balance">
             Visit <span className="text-gold-gradient italic">Eimaan Maison</span>
           </h2>
           <div className="gold-divider w-24 mx-auto" />
@@ -83,7 +83,7 @@ export default function Visit() {
                 href="tel:+2348064474739"
                 id="visit-phone-link"
                 aria-label="Call Eimaan Maison at +234 806 447 4739"
-                className="flex items-center gap-3 group"
+                className="flex items-center gap-3 group p-1 -m-1 rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#d4a843] active:scale-[0.99] transition-transform"
               >
                 <div className="w-9 h-9 border border-[rgba(212,168,67,0.25)] flex items-center justify-center text-[#d4a843] group-hover:bg-[rgba(212,168,67,0.08)] transition-colors">
                   <Phone size={15} />
@@ -96,7 +96,7 @@ export default function Visit() {
                 href="mailto:eimaanmaison@gmail.com"
                 id="visit-email-link"
                 aria-label="Send an email to eimaanmaison@gmail.com"
-                className="flex items-center gap-3 group"
+                className="flex items-center gap-3 group p-1 -m-1 rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#d4a843] active:scale-[0.99] transition-transform"
               >
                 <div className="w-9 h-9 border border-[rgba(212,168,67,0.25)] flex items-center justify-center text-[#d4a843] group-hover:bg-[rgba(212,168,67,0.08)] transition-colors">
                   <Mail size={15} />
@@ -111,7 +111,7 @@ export default function Visit() {
                 rel="noopener noreferrer"
                 id="visit-whatsapp-link"
                 aria-label="Chat with Eimaan Maison on WhatsApp (opens in new tab)"
-                className="flex items-center gap-3 group"
+                className="flex items-center gap-3 group p-1 -m-1 rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#d4a843] active:scale-[0.99] transition-transform"
               >
                 <div className="w-9 h-9 border border-[rgba(212,168,67,0.25)] flex items-center justify-center text-[#d4a843] group-hover:bg-[rgba(212,168,67,0.08)] transition-colors">
                   <MessageCircle size={15} />

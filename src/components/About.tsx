@@ -32,11 +32,11 @@ export default function About() {
           <p className="font-body text-[0.65rem] tracking-[0.3em] uppercase text-[#e8c45d] mb-4">
             Our Story
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-light text-[#fdf8ef] mb-6 text-balance">
             About <span className="text-gold-gradient italic">Eimaan Maison</span>
           </h2>
           <div className="gold-divider w-24 mx-auto mb-8" />
-          <p className="font-body text-sm md:text-base text-[#fdf8ef]/80 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-sm md:text-base text-[#fdf8ef]/80 leading-relaxed max-w-2xl mx-auto text-balance">
             Eimaan Maison is a luxury skincare and beauty brand focused on thoughtfully formulated
             skincare, personalized consultations, premium fragrances, and carefully curated luxury
             essentials. We combine product quality with personalized guidance — helping every

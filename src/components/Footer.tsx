@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <nav className="flex flex-wrap items-center justify-center gap-6" aria-label="Footer navigation">
+          <nav className="flex flex-wrap items-center justify-center gap-4 sm:gap-6" aria-label="Footer navigation">
             {[
               { label: 'About',        href: '#about' },
               { label: 'Skincare',     href: '#skincare' },
@@ -34,7 +34,7 @@ export default function Footer() {
               <a
                 key={l.href}
                 href={l.href}
-                className="font-body text-[0.65rem] tracking-widest uppercase text-[#fdf8ef]/70 hover:text-[#e8c45d] transition-colors"
+                className="font-body text-xs tracking-widest uppercase text-[#fdf8ef]/75 hover:text-[#e8c45d] transition-colors px-1.5 py-0.5 rounded-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#d4a843]"
               >
                 {l.label}
               </a>
@@ -42,33 +42,33 @@ export default function Footer() {
           </nav>
 
           {/* Socials */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <a
               href="https://instagram.com/eimaan_maison"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Eimaan Maison on Instagram (opens in new tab)"
-              className="text-[#fdf8ef]/70 hover:text-[#d4a843] transition-colors p-1"
+              className="w-10 h-10 flex items-center justify-center text-[#fdf8ef]/75 hover:text-[#d4a843] border border-transparent hover:border-[rgba(212,168,67,0.25)] hover:bg-[rgba(212,168,67,0.06)] active:scale-95 transition-all rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#d4a843]"
             >
-              <Globe size={16} />
+              <Globe size={18} />
             </a>
             <a
               href="https://facebook.com/eimaanmaison"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Eimaan Maison on Facebook (opens in new tab)"
-              className="text-[#fdf8ef]/70 hover:text-[#d4a843] transition-colors p-1"
+              className="w-10 h-10 flex items-center justify-center text-[#fdf8ef]/75 hover:text-[#d4a843] border border-transparent hover:border-[rgba(212,168,67,0.25)] hover:bg-[rgba(212,168,67,0.06)] active:scale-95 transition-all rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#d4a843]"
             >
-              <Share2 size={16} />
+              <Share2 size={18} />
             </a>
             <a
               href="https://wa.me/2348138933237"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat with Eimaan Maison on WhatsApp (opens in new tab)"
-              className="text-[#fdf8ef]/70 hover:text-[#d4a843] transition-colors p-1"
+              className="w-10 h-10 flex items-center justify-center text-[#fdf8ef]/75 hover:text-[#d4a843] border border-transparent hover:border-[rgba(212,168,67,0.25)] hover:bg-[rgba(212,168,67,0.06)] active:scale-95 transition-all rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#d4a843]"
             >
-              <MessageCircle size={16} />
+              <MessageCircle size={18} />
             </a>
           </div>
         </div>
@@ -76,10 +76,10 @@ export default function Footer() {
         <div className="gold-divider my-8" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-          <p className="font-body text-[0.65rem] text-[#fdf8ef]/60">
+          <p className="font-body text-xs text-[#fdf8ef]/70">
             &copy; {year} Eimaan Maison Enterprises. BN No. 9650895. All rights reserved.
           </p>
-          <p className="font-body text-[0.65rem] text-[#fdf8ef]/60">
+          <p className="font-body text-xs text-[#fdf8ef]/70">
             No. 12 Sabuwar Kasuwa, Katsina, Nigeria
           </p>
         </div>
